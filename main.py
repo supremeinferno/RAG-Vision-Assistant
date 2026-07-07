@@ -1,18 +1,19 @@
 import base64
+import tempfile
+import os
 
 from dotenv import load_dotenv
+load_dotenv()
 
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_mistralai import (
-    ChatMistralAI,
-    MistralAIEmbeddings,
+from langchain_mistralai import (ChatMistralAI, MistralAIEmbeddings)
+from config import CHROMA_DB_PATH
+
+CHROMA_DB_PATH = os.path.join(
+    tempfile.gettempdir(),
+    "chroma_db"
 )
-
-load_dotenv()
-
-CHROMA_DB_PATH = "chroma_db"
-
 
 # ==========================================================
 # EMBEDDINGS

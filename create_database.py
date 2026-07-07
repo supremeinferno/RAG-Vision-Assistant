@@ -1,13 +1,16 @@
 import os
 import shutil
-
+import tempfile
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_mistralai import MistralAIEmbeddings
+from config import CHROMA_DB_PATH
 
-
-CHROMA_DB_PATH = "chroma_db"
+CHROMA_DB_PATH = os.path.join(
+    tempfile.gettempdir(),
+    "chroma_db"
+)
 
 
 def load_embeddings():
