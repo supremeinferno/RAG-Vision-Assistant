@@ -349,9 +349,7 @@ with right:
         unsafe_allow_html=True
     )
 
-    if len(st.session_state.messages) == 0:
-
-        st.markdown("""
+    st.markdown("""
         <div style="
         background:#111827;
         border:1px solid #232C38;
@@ -369,6 +367,8 @@ with right:
 
         </div>
         """, unsafe_allow_html=True)
+
+    if len(st.session_state.messages) == 0:
 
         st.markdown("##### Suggested Questions")
 
