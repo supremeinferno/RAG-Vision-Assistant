@@ -9,9 +9,6 @@ venv/
 __pycache__/
 *.pyc
 
-# ChromaDB
-chroma_db/
-
 # Agents
 .agents/
 

@@ -36,8 +36,15 @@ The application builds a local vector database from uploaded PDFs, retrieves rel
 
 ## Project Structure
 
+## Project Structure
+
 ```text
 Codex-RAG/
+│
+├── assets/
+│   ├── home.png
+│   ├── chat.png
+│   └── retrieval.png
 │
 ├── multimodal_app.py
 ├── create_database.py
@@ -129,31 +136,16 @@ streamlit run multimodal_app.py
 
 ---
 
-## Future Improvements
-
-- Multiple PDF support
-- Citation highlighting
-- Conversation export
-- OCR support
-- User authentication
-- Cloud deployment
-- Streaming responses
-
----
-
 ## Screenshots
 
 ### Home
-
-> Add screenshot here
+![Home](assets/home.png)
 
 ### Chat Interface
-
-> Add screenshot here
+![Chat](assets/chat.png)
 
 ### Document Retrieval
-
-> Add screenshot here
+![Document Retrieval](assets/retrieval.png)
 
 ---
 
@@ -163,7 +155,7 @@ streamlit run multimodal_app.py
 
 GitHub: https://github.com/supremeinferno
 
-LinkedIn: *Add your LinkedIn profile*
+LinkedIn: https://www.linkedin.com/in/pranavgarg317
 
 ---
 
